@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HitungLuas</string>
+    <string name="panjang">Panjang</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="area">Area</string>
+</resources>
