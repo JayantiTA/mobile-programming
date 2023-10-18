@@ -46,10 +46,10 @@ public class CustomAdapterWeight extends BaseAdapter {
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.model_weights, null, true);
 
-            holder.tvdate = (TextView) convertView.findViewById(R.id.weights_date);
-            holder.tvmax = (TextView) convertView.findViewById(R.id.weights_max);
-            holder.tvmin = (TextView) convertView.findViewById(R.id.weights_min);
-            holder.tvdiff = (TextView) convertView.findViewById(R.id.weights_diff);
+            holder.tvdate = convertView.findViewById(R.id.weights_date);
+            holder.tvmax = convertView.findViewById(R.id.weights_max);
+            holder.tvmin = convertView.findViewById(R.id.weights_min);
+            holder.tvdiff = convertView.findViewById(R.id.weights_diff);
 
             convertView.setTag(holder);
         } else {
@@ -61,11 +61,19 @@ public class CustomAdapterWeight extends BaseAdapter {
         double min = weightsModelArrayList.get(position).getMin();
         double diff = max - min;
         holder.tvdate.setText("Date: " + weightsModelArrayList.get(position).getDate());
-        holder.tvmax.setText("Max: " + max);
-        holder.tvmin.setText("Min: " + min);
-        holder.tvdiff.setText("Diff: " + diff);
+        holder.tvmax.setText("Max (kg): " + max);
+        holder.tvmin.setText("Min (kg): " + min);
+        holder.tvdiff.setText("Diff (kg): " + diff);
 
         return convertView;
+    }
+
+    public void addAll(ArrayList<WeightModel> weightModelArrayList) {
+        weightsModelArrayList.addAll(weightModelArrayList);
+    }
+
+    public void clear() {
+        weightsModelArrayList.clear();
     }
 
     private static class ViewHolder {

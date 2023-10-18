@@ -40,8 +40,8 @@
     <string name="add_weight">Add Weight</string>
     <string name="modify">Modify</string>
     <string name="date">Date</string>
-    <string name="maximum_weight">Maximum Weight</string>
-    <string name="minimum_weight">Minimum Weight</string>
+    <string name="maximum_weight">Max Weight (kg) </string>
+    <string name="minimum_weight">Min Weight (kg) </string>
     <string name="store">Store</string>
     <string name="to_edit_click_on_the_weight">To Edit, Click on the Weight</string>
     <string name="update">Update</string>

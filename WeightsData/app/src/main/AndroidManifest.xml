@@ -23,8 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ModifyWeightsActivity" />
-        <activity android:name=".AddWeight" />
+        <activity android:name=".ModifyWeightDialog" />
+        <activity android:name=".AddWeightDialog" />
         <activity android:name=".ModWeight" />
     </application>
 
