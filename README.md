@@ -7,3 +7,4 @@
 5. SQLite implementation -> WeightsData
 6. Dialog implementation -> WeightsData
 7. ListView implementation -> WeightsData
+8. GMaps
