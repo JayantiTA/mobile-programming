@@ -7,4 +7,5 @@
 5. SQLite implementation -> WeightsData
 6. Dialog implementation -> WeightsData
 7. ListView implementation -> WeightsData
-8. GMaps
+8. GMaps (Latitude, Longitude, Zoom) -> GMaps
+9. Geocoder GMaps -> GMaps
