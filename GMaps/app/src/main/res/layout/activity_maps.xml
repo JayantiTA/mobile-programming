@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Latitude"
-                    android:inputType="text"
+                    android:inputType="numberDecimal|numberSigned"
                     android:padding="16dp"
                     android:layout_margin="16dp"
                     android:drawablePadding="8dp"/>
@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Longitude"
-                    android:inputType="text"
+                    android:inputType="numberDecimal|numberSigned"
                     android:padding="16dp"
                     android:layout_margin="16dp"
                     android:drawablePadding="8dp"/>

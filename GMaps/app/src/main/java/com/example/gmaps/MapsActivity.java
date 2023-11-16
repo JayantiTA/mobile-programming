@@ -1,17 +1,11 @@
 package com.example.gmaps;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.res.Resources;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -20,12 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.FragmentActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import com.example.gmaps.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -58,16 +47,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        View.OnClickListener op = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (view.getId() == R.id.btn) {
-                    hideKeyBoard(view);
-                    goToLocation();
-                } else if (view.getId() == R.id.btn_search) {
-                    hideKeyBoard(view);
-                    goSearch();
-                }
+        View.OnClickListener op = view -> {
+            if (view.getId() == R.id.btn) {
+                hideKeyBoard(view);
+                goToLocation();
+            } else if (view.getId() == R.id.btn_search) {
+                hideKeyBoard(view);
+                goSearch();
             }
         };
 
@@ -196,5 +182,4 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         InputMethodManager a = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
         a.hideSoftInputFromWindow(v.getWindowToken(),0);
     }
-
 }
