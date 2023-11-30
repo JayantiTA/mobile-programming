@@ -10,4 +10,5 @@
 8. [GMaps (Latitude, Longitude, Zoom)](./GMaps)
 9. [Geocoder GMaps](./GMaps)
 10. [Simple GPS](./SimpleGPS)
-11. [GPS GMaps (dynamic marker)](./GPSMaps/)
+11. [GPS GMaps (dynamic marker)](./GPSMaps)
+12. [Simple Camera App](./CameraApp)
